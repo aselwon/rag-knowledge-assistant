@@ -1,0 +1,882 @@
+{
+  "generated_at": "2026-09-26T20:46:24.048955+00:00",
+  "mode": "mock",
+  "embedding": "mock-hash-v1:384",
+  "threshold": 0.16,
+  "top_k": 3,
+  "metrics": {
+    "questions": 26,
+    "source_hit_rate": 1.0,
+    "answer_match_rate": 1.0,
+    "faithfulness_proxy": 1.0,
+    "refusal_accuracy": 1.0
+  },
+  "results": [
+    {
+      "question": "How many days of annual leave do employees receive?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "25 days",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "f2d5e0fc-4fc8-4a9c-a36a-05a6987b66bc",
+      "answer": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests. [1]\n\nPrimary caregivers receive 16 weeks of paid parental leave. Secondary caregivers receive 6 weeks of paid parental leave. Contact the People team eight weeks before the planned start date. [2]\n\nReport sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days. [3]",
+      "citations": [
+        {
+          "chunk_id": "3eed6e510879b6a51789b5c4",
+          "quote": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests.",
+          "source": "people.md",
+          "section": "Annual leave",
+          "score": 0.6821910346207334
+        },
+        {
+          "chunk_id": "3e5679cf876f1bd9c00cf22c",
+          "quote": "Primary caregivers receive 16 weeks of paid parental leave. Secondary caregivers receive 6 weeks of paid parental leave. Contact the People team eight weeks before the planned start date.",
+          "source": "people.md",
+          "section": "Parental leave",
+          "score": 0.31943826915507834
+        },
+        {
+          "chunk_id": "67ed81648d46e73525cae3d2",
+          "quote": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days.",
+          "source": "people.md",
+          "section": "Sick leave",
+          "score": 0.2901904967484028
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 110,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "Who approves annual leave requests?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "manager",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "a9bf78ab-a844-4b7b-bbd5-b18c53689a28",
+      "answer": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests. [1]\n\nReport sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days. [2]",
+      "citations": [
+        {
+          "chunk_id": "3eed6e510879b6a51789b5c4",
+          "quote": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests.",
+          "source": "people.md",
+          "section": "Annual leave",
+          "score": 0.6201737111858642
+        },
+        {
+          "chunk_id": "67ed81648d46e73525cae3d2",
+          "quote": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days.",
+          "source": "people.md",
+          "section": "Sick leave",
+          "score": 0.2176428800118828
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 72,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "When should I report sick leave?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "10:00",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "79770fa8-aa0c-439c-ae62-04a61a77cecd",
+      "answer": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days. [1]\n\nEmployees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests. [2]",
+      "citations": [
+        {
+          "chunk_id": "67ed81648d46e73525cae3d2",
+          "quote": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days.",
+          "source": "people.md",
+          "section": "Sick leave",
+          "score": 0.6488856673240662
+        },
+        {
+          "chunk_id": "3eed6e510879b6a51789b5c4",
+          "quote": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests.",
+          "source": "people.md",
+          "section": "Annual leave",
+          "score": 0.3466876149177551
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 74,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "How long is parental leave for primary caregivers?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "16 weeks",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "82769433-bd7b-4cc5-b50f-492ffaea04c5",
+      "answer": "Primary caregivers receive 16 weeks of paid parental leave. Secondary caregivers receive 6 weeks of paid parental leave. Contact the People team eight weeks before the planned start date. [1]\n\nEmployees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests. [2]\n\nReport sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days. [3]",
+      "citations": [
+        {
+          "chunk_id": "3e5679cf876f1bd9c00cf22c",
+          "quote": "Primary caregivers receive 16 weeks of paid parental leave. Secondary caregivers receive 6 weeks of paid parental leave. Contact the People team eight weeks before the planned start date.",
+          "source": "people.md",
+          "section": "Parental leave",
+          "score": 0.5111012306481253
+        },
+        {
+          "chunk_id": "3eed6e510879b6a51789b5c4",
+          "quote": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests.",
+          "source": "people.md",
+          "section": "Annual leave",
+          "score": 0.24806947255341638
+        },
+        {
+          "chunk_id": "67ed81648d46e73525cae3d2",
+          "quote": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days.",
+          "source": "people.md",
+          "section": "Sick leave",
+          "score": 0.2176428800118828
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 108,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "How long is an onboarding buddy assigned?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "30 days",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "1b9f2251-5068-403f-a0f7-b8cfedbaa2c3",
+      "answer": "Every new employee is assigned an onboarding buddy for their first 30 days. The onboarding buddy helps with tools, introductions, and team routines. [1]",
+      "citations": [
+        {
+          "chunk_id": "627d55569f95c266a78020b8",
+          "quote": "Every new employee is assigned an onboarding buddy for their first 30 days. The onboarding buddy helps with tools, introductions, and team routines.",
+          "source": "people.md",
+          "section": "Onboarding buddy",
+          "score": 0.628618597984314
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 38,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "What is the annual learning budget?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "1200 EUR",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "f482f65d-0ab2-4462-a176-7e1a8cc14b90",
+      "answer": "The annual learning budget is 1200 EUR per employee. Courses, books, and conferences are eligible for the learning budget. Obtain manager approval before purchasing learning materials. [1]\n\nEmployees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests. [2]",
+      "citations": [
+        {
+          "chunk_id": "850e10dc6fd072fa941752dc",
+          "quote": "The annual learning budget is 1200 EUR per employee. Courses, books, and conferences are eligible for the learning budget. Obtain manager approval before purchasing learning materials.",
+          "source": "people.md",
+          "section": "Learning budget",
+          "score": 0.7126966927259178
+        },
+        {
+          "chunk_id": "3eed6e510879b6a51789b5c4",
+          "quote": "Employees receive 25 days of paid annual leave per calendar year. Request annual leave in PeopleHub at least two weeks before your first day away. Your manager approves annual leave requests.",
+          "source": "people.md",
+          "section": "Annual leave",
+          "score": 0.2401922267732689
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 71,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "When do performance reviews happen?",
+      "expected_sources": [
+        "people.md"
+      ],
+      "expected_text": "March and September",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "248f3979-c3dd-45a2-8aa4-f315c414159a",
+      "answer": "Performance reviews happen twice a year, in March and September. Employees submit a self-assessment before each performance review. [1]",
+      "citations": [
+        {
+          "chunk_id": "a320d0c22f16b169b69eab62",
+          "quote": "Performance reviews happen twice a year, in March and September. Employees submit a self-assessment before each performance review.",
+          "source": "people.md",
+          "section": "Performance reviews",
+          "score": 0.6928202899450004
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 29,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "people.md"
+      ]
+    },
+    {
+      "question": "Can employees work remotely in another country?",
+      "expected_sources": [
+        "remote.md"
+      ],
+      "expected_text": "written approval",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "4fbebeb0-b121-412b-bbd1-05ded6de6404",
+      "answer": "Employees may work remotely within their country of employment. Remote work from another country requires written approval from People and Legal before travel. [1]\n\nStore work passwords in the company-approved password manager, VaultBox. Never share passwords through chat or email. [2]",
+      "citations": [
+        {
+          "chunk_id": "5be5561753fcfd395a7c1847",
+          "quote": "Employees may work remotely within their country of employment. Remote work from another country requires written approval from People and Legal before travel.",
+          "source": "remote.md",
+          "section": "Remote work",
+          "score": 0.6425754619412265
+        },
+        {
+          "chunk_id": "df8e3e50726178c75aabba16",
+          "quote": "Store work passwords in the company-approved password manager, VaultBox. Never share passwords through chat or email.",
+          "source": "security.md",
+          "section": "Password manager",
+          "score": 0.18650096276408212
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 55,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "remote.md",
+        "security.md"
+      ]
+    },
+    {
+      "question": "What are core collaboration hours?",
+      "expected_sources": [
+        "remote.md"
+      ],
+      "expected_text": "10:00 to 15:00",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "bf8fe154-131b-4b73-a8e5-9e5f502d5bd8",
+      "answer": "Core collaboration hours are 10:00 to 15:00 Central European Time. Schedule team meetings within core collaboration hours whenever possible. [1]",
+      "citations": [
+        {
+          "chunk_id": "e0a51bcc79cade4baadeba6e",
+          "quote": "Core collaboration hours are 10:00 to 15:00 Central European Time. Schedule team meetings within core collaboration hours whenever possible.",
+          "source": "remote.md",
+          "section": "Core collaboration hours",
+          "score": 0.8017837048108494
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 30,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "remote.md"
+      ]
+    },
+    {
+      "question": "What is the home office equipment budget?",
+      "expected_sources": [
+        "remote.md"
+      ],
+      "expected_text": "500 EUR",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "2ad7652f-912f-4cde-985e-acdf54287fec",
+      "answer": "New employees receive a home office equipment budget of 500 EUR. Eligible home office equipment includes a desk, chair, monitor, and keyboard. Submit receipts through ExpenseFlow. [1]\n\nThe annual learning budget is 1200 EUR per employee. Courses, books, and conferences are eligible for the learning budget. Obtain manager approval before purchasing learning materials. [2]\n\nRegister office visitors with reception at least one working day in advance. Visitors must wear a badge and remain accompanied in secure areas. [3]",
+      "citations": [
+        {
+          "chunk_id": "0563924f7db299f29ccbd55e",
+          "quote": "New employees receive a home office equipment budget of 500 EUR. Eligible home office equipment includes a desk, chair, monitor, and keyboard. Submit receipts through ExpenseFlow.",
+          "source": "remote.md",
+          "section": "Home office equipment",
+          "score": 0.7624928951263428
+        },
+        {
+          "chunk_id": "850e10dc6fd072fa941752dc",
+          "quote": "The annual learning budget is 1200 EUR per employee. Courses, books, and conferences are eligible for the learning budget. Obtain manager approval before purchasing learning materials.",
+          "source": "people.md",
+          "section": "Learning budget",
+          "score": 0.2314550280570984
+        },
+        {
+          "chunk_id": "d72d5da4552c3dd8fb3eb650",
+          "quote": "Register office visitors with reception at least one working day in advance. Visitors must wear a badge and remain accompanied in secure areas.",
+          "source": "expenses.md",
+          "section": "Office visitors",
+          "score": 0.1924500797718719
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 92,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "remote.md",
+        "people.md",
+        "expenses.md"
+      ]
+    },
+    {
+      "question": "What is the monthly internet reimbursement cap?",
+      "expected_sources": [
+        "remote.md"
+      ],
+      "expected_text": "30 EUR",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "812dd793-991a-4ee6-94e3-5a3d2fe2cf95",
+      "answer": "Home internet reimbursement is capped at 30 EUR per month. Submit your internet bill through ExpenseFlow by the fifth day of the following month. [1]",
+      "citations": [
+        {
+          "chunk_id": "2d0d2339e9e05e1732f26663",
+          "quote": "Home internet reimbursement is capped at 30 EUR per month. Submit your internet bill through ExpenseFlow by the fifth day of the following month.",
+          "source": "remote.md",
+          "section": "Internet reimbursement",
+          "score": 0.46423834562301636
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 39,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "remote.md"
+      ]
+    },
+    {
+      "question": "Where should project decisions be recorded?",
+      "expected_sources": [
+        "remote.md"
+      ],
+      "expected_text": "meeting notes",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "ea7e4a59-4d9e-41e8-a8e9-fb25d329ccf9",
+      "answer": "Every project decision must be recorded in written meeting notes in the team workspace. Meeting notes should include the decision owner and next steps. [1]",
+      "citations": [
+        {
+          "chunk_id": "cab4c73f713dc64357b03082",
+          "quote": "Every project decision must be recorded in written meeting notes in the team workspace. Meeting notes should include the decision owner and next steps.",
+          "source": "remote.md",
+          "section": "Meeting notes",
+          "score": 0.25724787966919704
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 37,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "remote.md"
+      ]
+    },
+    {
+      "question": "Is multi-factor authentication mandatory?",
+      "expected_sources": [
+        "security.md"
+      ],
+      "expected_text": "mandatory",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "6b136ba4-dae5-4db7-9291-a8c6112cfb12",
+      "answer": "Multi-factor authentication is mandatory for all company accounts. Use a hardware security key or an authenticator app for multi-factor authentication. SMS authentication is not permitted. [1]",
+      "citations": [
+        {
+          "chunk_id": "353081176b126e437c13e2fd",
+          "quote": "Multi-factor authentication is mandatory for all company accounts. Use a hardware security key or an authenticator app for multi-factor authentication. SMS authentication is not permitted.",
+          "source": "security.md",
+          "section": "Multi-factor authentication",
+          "score": 0.8109307530799736
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 34,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "security.md"
+      ]
+    },
+    {
+      "question": "How do I report a lost laptop?",
+      "expected_sources": [
+        "security.md"
+      ],
+      "expected_text": "security@example.test",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "122c1848-0857-43ad-9fe0-1ee43defd6cf",
+      "answer": "Report a lost laptop immediately to security@example.test and the IT help desk. The security team will revoke active sessions and initiate a remote wipe of the lost laptop. [1]\n\nReport suspected phishing using the Report Phishing button in your mail client. Do not click links or open attachments in suspected phishing messages. [2]\n\nReport sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days. [3]",
+      "citations": [
+        {
+          "chunk_id": "b1c2f3dfa44bb9a618239029",
+          "quote": "Report a lost laptop immediately to security@example.test and the IT help desk. The security team will revoke active sessions and initiate a remote wipe of the lost laptop.",
+          "source": "security.md",
+          "section": "Lost laptop",
+          "score": 0.6735752620227584
+        },
+        {
+          "chunk_id": "e3cf5c397ac1ef65fdd265c5",
+          "quote": "Report suspected phishing using the Report Phishing button in your mail client. Do not click links or open attachments in suspected phishing messages.",
+          "source": "security.md",
+          "section": "Phishing reports",
+          "score": 0.19518001050829947
+        },
+        {
+          "chunk_id": "67ed81648d46e73525cae3d2",
+          "quote": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days.",
+          "source": "people.md",
+          "section": "Sick leave",
+          "score": 0.18731715343347655
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 97,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "security.md",
+        "people.md"
+      ]
+    },
+    {
+      "question": "Which password manager should I use?",
+      "expected_sources": [
+        "security.md"
+      ],
+      "expected_text": "VaultBox",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "7e6cd713-cf88-4401-9251-e5218247c06a",
+      "answer": "Store work passwords in the company-approved password manager, VaultBox. Never share passwords through chat or email. [1]",
+      "citations": [
+        {
+          "chunk_id": "df8e3e50726178c75aabba16",
+          "quote": "Store work passwords in the company-approved password manager, VaultBox. Never share passwords through chat or email.",
+          "source": "security.md",
+          "section": "Password manager",
+          "score": 0.37300192552816425
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 29,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "security.md"
+      ]
+    },
+    {
+      "question": "Where can customer data be stored?",
+      "expected_sources": [
+        "security.md"
+      ],
+      "expected_text": "approved company systems",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "ae623b81-5540-4478-a841-980669466b29",
+      "answer": "Customer data must only be stored in approved company systems. Never copy customer data to personal devices or public AI tools. [1]",
+      "citations": [
+        {
+          "chunk_id": "1af7cc582d2f84446c50a8b7",
+          "quote": "Customer data must only be stored in approved company systems. Never copy customer data to personal devices or public AI tools.",
+          "source": "security.md",
+          "section": "Customer data",
+          "score": 0.7378647987125637
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 34,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "security.md"
+      ]
+    },
+    {
+      "question": "How do I report suspected phishing?",
+      "expected_sources": [
+        "security.md"
+      ],
+      "expected_text": "Report Phishing",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "8f585e59-c52d-4343-b7be-ba5b9297c39e",
+      "answer": "Report suspected phishing using the Report Phishing button in your mail client. Do not click links or open attachments in suspected phishing messages. [1]\n\nReport sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days. [2]",
+      "citations": [
+        {
+          "chunk_id": "e3cf5c397ac1ef65fdd265c5",
+          "quote": "Report suspected phishing using the Report Phishing button in your mail client. Do not click links or open attachments in suspected phishing messages.",
+          "source": "security.md",
+          "section": "Phishing reports",
+          "score": 0.780720042033198
+        },
+        {
+          "chunk_id": "67ed81648d46e73525cae3d2",
+          "quote": "Report sick leave to your manager before 10:00 on your first day of absence. Record sick leave in PeopleHub. A medical certificate is required after three consecutive working days.",
+          "source": "people.md",
+          "section": "Sick leave",
+          "score": 0.18731715343347655
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 66,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "security.md",
+        "people.md"
+      ]
+    },
+    {
+      "question": "When is VPN access required?",
+      "expected_sources": [
+        "security.md"
+      ],
+      "expected_text": "internal production services",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "bb7519b3-1087-4665-8df2-1fa4a86a2e1d",
+      "answer": "VPN access is required when connecting to internal production services. Request VPN access through the IT help desk with manager approval. [1]",
+      "citations": [
+        {
+          "chunk_id": "130bd19a7467bfc14013c1f5",
+          "quote": "VPN access is required when connecting to internal production services. Request VPN access through the IT help desk with manager approval.",
+          "source": "security.md",
+          "section": "VPN access",
+          "score": 0.750478826477493
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 32,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "security.md"
+      ]
+    },
+    {
+      "question": "What is the expense deadline for claims?",
+      "expected_sources": [
+        "expenses.md"
+      ],
+      "expected_text": "30 days",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "25bce888-82c4-436a-b927-271f08d9c30a",
+      "answer": "Submit expense claims within 30 days of purchase through ExpenseFlow. Every expense claim must include an itemized receipt and business purpose. [1]\n\nApproved expense claims are paid in the next monthly payroll. Questions about expense payment should be sent to finance@example.test. [2]",
+      "citations": [
+        {
+          "chunk_id": "67ecb34076ac39565428df52",
+          "quote": "Submit expense claims within 30 days of purchase through ExpenseFlow. Every expense claim must include an itemized receipt and business purpose.",
+          "source": "expenses.md",
+          "section": "Expense deadline",
+          "score": 0.566138522807912
+        },
+        {
+          "chunk_id": "90216e8aed53cd8b3981aeb1",
+          "quote": "Approved expense claims are paid in the next monthly payroll. Questions about expense payment should be sent to finance@example.test.",
+          "source": "expenses.md",
+          "section": "Expense payment",
+          "score": 0.46188019329666696
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 56,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "expenses.md"
+      ]
+    },
+    {
+      "question": "How do I book business travel?",
+      "expected_sources": [
+        "expenses.md"
+      ],
+      "expected_text": "TravelDesk",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "205efed6-3d6e-4ad9-a9f2-459b56e2d1ef",
+      "answer": "Book business travel through TravelDesk after manager approval. Economy class is required for flights shorter than six hours. [1]\n\nThe business travel meal allowance is 45 EUR per day. Alcohol is not reimbursable under the meal allowance. [2]",
+      "citations": [
+        {
+          "chunk_id": "c88a8f979f9f499d9ebf9c10",
+          "quote": "Book business travel through TravelDesk after manager approval. Economy class is required for flights shorter than six hours.",
+          "source": "expenses.md",
+          "section": "Travel booking",
+          "score": 0.5163978049992207
+        },
+        {
+          "chunk_id": "60acb8bbc1f6c280310e5e56",
+          "quote": "The business travel meal allowance is 45 EUR per day. Alcohol is not reimbursable under the meal allowance.",
+          "source": "expenses.md",
+          "section": "Meal allowance",
+          "score": 0.21821788793152996
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 50,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "expenses.md"
+      ]
+    },
+    {
+      "question": "What is the daily meal allowance?",
+      "expected_sources": [
+        "expenses.md"
+      ],
+      "expected_text": "45 EUR",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "cd903213-2801-4c94-9983-1138b1da9edb",
+      "answer": "The business travel meal allowance is 45 EUR per day. Alcohol is not reimbursable under the meal allowance. [1]",
+      "citations": [
+        {
+          "chunk_id": "60acb8bbc1f6c280310e5e56",
+          "quote": "The business travel meal allowance is 45 EUR per day. Alcohol is not reimbursable under the meal allowance.",
+          "source": "expenses.md",
+          "section": "Meal allowance",
+          "score": 0.654653708498072
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 31,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "expenses.md"
+      ]
+    },
+    {
+      "question": "When are approved expense claims paid?",
+      "expected_sources": [
+        "expenses.md"
+      ],
+      "expected_text": "next monthly payroll",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "e375ff20-64f1-4fe3-b132-4276a950309e",
+      "answer": "Approved expense claims are paid in the next monthly payroll. Questions about expense payment should be sent to finance@example.test. [1]\n\nSubmit expense claims within 30 days of purchase through ExpenseFlow. Every expense claim must include an itemized receipt and business purpose. [2]",
+      "citations": [
+        {
+          "chunk_id": "90216e8aed53cd8b3981aeb1",
+          "quote": "Approved expense claims are paid in the next monthly payroll. Questions about expense payment should be sent to finance@example.test.",
+          "source": "expenses.md",
+          "section": "Expense payment",
+          "score": 0.5999999880790728
+        },
+        {
+          "chunk_id": "67ecb34076ac39565428df52",
+          "quote": "Submit expense claims within 30 days of purchase through ExpenseFlow. Every expense claim must include an itemized receipt and business purpose.",
+          "source": "expenses.md",
+          "section": "Expense deadline",
+          "score": 0.3922322690486908
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 54,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "expenses.md"
+      ]
+    },
+    {
+      "question": "How do I register office visitors?",
+      "expected_sources": [
+        "expenses.md"
+      ],
+      "expected_text": "reception",
+      "expected_refusal": false,
+      "source_hit": true,
+      "answer_match": true,
+      "grounded": true,
+      "request_id": "7c831065-231b-4039-b303-6639ad795425",
+      "answer": "Register office visitors with reception at least one working day in advance. Visitors must wear a badge and remain accompanied in secure areas. [1]\n\nNew employees receive a home office equipment budget of 500 EUR. Eligible home office equipment includes a desk, chair, monitor, and keyboard. Submit receipts through ExpenseFlow. [2]",
+      "citations": [
+        {
+          "chunk_id": "d72d5da4552c3dd8fb3eb650",
+          "quote": "Register office visitors with reception at least one working day in advance. Visitors must wear a badge and remain accompanied in secure areas.",
+          "source": "expenses.md",
+          "section": "Office visitors",
+          "score": 0.6666666666666693
+        },
+        {
+          "chunk_id": "0563924f7db299f29ccbd55e",
+          "quote": "New employees receive a home office equipment budget of 500 EUR. Eligible home office equipment includes a desk, chair, monitor, and keyboard. Submit receipts through ExpenseFlow.",
+          "source": "remote.md",
+          "section": "Home office equipment",
+          "score": 0.2641352791826511
+        }
+      ],
+      "refused": false,
+      "usage": {
+        "units": 63,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": [
+        "expenses.md",
+        "remote.md"
+      ]
+    },
+    {
+      "question": "Who won the intergalactic chess championship?",
+      "expected_sources": [],
+      "expected_refusal": true,
+      "source_hit": false,
+      "answer_match": true,
+      "grounded": false,
+      "request_id": "01bd4b5a-e9f9-4d5e-9c74-6246dd272eea",
+      "answer": "I couldn't find enough evidence in the documents to answer this question.",
+      "citations": [],
+      "refused": true,
+      "usage": {
+        "units": 6,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": []
+    },
+    {
+      "question": "Explain photosynthesis in tropical rainforests.",
+      "expected_sources": [],
+      "expected_refusal": true,
+      "source_hit": false,
+      "answer_match": true,
+      "grounded": false,
+      "request_id": "f9b7665f-2aeb-450b-a252-a446b95db024",
+      "answer": "I couldn't find enough evidence in the documents to answer this question.",
+      "citations": [],
+      "refused": true,
+      "usage": {
+        "units": 5,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": []
+    },
+    {
+      "question": "What is the recipe for banana pancakes?",
+      "expected_sources": [],
+      "expected_refusal": true,
+      "source_hit": false,
+      "answer_match": true,
+      "grounded": false,
+      "request_id": "f33948d9-cee2-487c-b55a-24acd2046918",
+      "answer": "I couldn't find enough evidence in the documents to answer this question.",
+      "citations": [],
+      "refused": true,
+      "usage": {
+        "units": 7,
+        "unit": "mock_units"
+      },
+      "retrieved_sources": []
+    }
+  ]
+}

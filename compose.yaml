@@ -1,0 +1,47 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: docupilot
+      POSTGRES_PASSWORD: docupilot
+      POSTGRES_DB: docupilot
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-56432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docupilot -d docupilot"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://docupilot:docupilot@db:5432/docupilot
+      MOCK_LLM: ${MOCK_LLM:-1}
+      SIMILARITY_THRESHOLD: ${SIMILARITY_THRESHOLD:-0.16}
+      TOP_K: ${TOP_K:-3}
+      EMBEDDING_DIM: ${EMBEDDING_DIM:-384}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.openai.com/v1}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
+      CHAT_MODEL: ${CHAT_MODEL:-gpt-4o-mini}
+    ports:
+      - "127.0.0.1:${API_PORT:-18080}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  web:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:${WEB_PORT:-18765}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  pgdata:

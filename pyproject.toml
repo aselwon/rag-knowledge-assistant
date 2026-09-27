@@ -1,0 +1,19 @@
+[project]
+name = "docupilot"
+version = "0.1.0"
+description = "Offline-first cited handbook Q&A with reproducible retrieval evaluation"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn[standard]>=0.34,<1", "psycopg[binary]>=3.2,<4",
+  "pgvector>=0.3,<1", "numpy>=2,<3", "httpx>=0.28,<1", "python-multipart>=0.0.20,<1",
+  "pydantic-settings>=2.7,<3"
+]
+[dependency-groups]
+dev = ["pytest>=8,<9", "ruff>=0.11,<1"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires PostgreSQL with pgvector"]
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "I"]
