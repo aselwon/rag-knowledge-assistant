@@ -4,6 +4,11 @@ DocuPilot is an offline-first MVP for asking questions about a small company han
 
 The default `MOCK_LLM=1` path is deterministic and needs no API key at runtime. It is intended for a reproducible local demo and evaluation, rather than as a production language model.
 
+## Public demo
+
+[Open the live DocuPilot demo](https://docupilot-demo.pages.dev).
+
+
 ## Quick demo with Docker Compose
 
 Requirements: Docker with Compose, and network access for the first image build. Runtime requests in mock mode are offline.
